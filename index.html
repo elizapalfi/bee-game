@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bee Swarm Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="banner">
+        <div id="player-name-container">
+            <p>
+                <span id="player-name">Player: </span>
+                <button id="edit-button">
+                    <img src="assets/images/icon_edit.png" alt="Edit" class="edit-icon">
+                </button>
+            </p>
+        </div>
+
+        <div id="player-input-container">
+            <div class="bee-input-wrapper">
+                <input id="player-input" class="bee-input" type="text" placeholder="Your name...">
+            </div>
+        </div>
+
+        <div class="title-container">
+            <h1>Bee Swarm Game</h1>
+            <div class="title-icons-container">
+                <img src="assets/images/icon_title.png" alt="Bee" class="bee-icon">
+                <img src="assets/images/icon_target.png" alt="Target" class="target-icon">
+            </div>
+        </div>
+    </div>
+
+    <div class="swarm-status">
+        <div class="damage-status">
+            <h2>Damage Status</h2>
+            <div id="log"></div>
+        </div>
+
+        <div id="swarm-info"></div>
+    </div>
+
+
+    <div class="action-buttons">
+        <button id="hit-button">Hit</button>
+        <img src="assets/images/icon_target.png" alt="Target" class="target-icon">
+        <button id="restart-button">
+            <img src="assets/images/icon_restart.svg" alt="Restart" class="restart-icon">
+        </button>
+    </div>
+
+    <script src="./models/bee_model.js"></script>
+    <script src="./models/bee_type_enum.js"></script>
+    <script src="./constants/color_constants.js"></script>
+    <script src="./constants/dom_constants.js"></script>
+    <script src="./constants/general_messages_constants.js"></script>
+    <script src="./constants/local_storage_constants.js"></script>
+    <script src="./utils/utils.js"></script>
+    <script src="./html_build/html_build_swarm.js"></script>
+    <script src="./local_storage/storage.js"></script>
+    <script src="./game_play/game.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

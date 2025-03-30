@@ -1,0 +1,36 @@
+.health-container {
+    width: 100px;
+}
+
+.health-container img {
+    margin-top: 18px;
+    width: 64px;
+    height: 64px;
+}
+
+.health-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0px;
+}
+
+.health-stats p {
+    margin: 0;
+    text-align: right;
+    font-size: small;
+}
+
+.health-bar-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.health-bar {
+    height: 24px;
+    width: 100%;
+    transition: width 0.3s ease-in-out;
+}

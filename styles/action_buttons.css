@@ -1,0 +1,99 @@
+.action-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.action-buttons button {
+    width: 60px;
+    height: 60px;
+    font-weight: bold;
+    background-color: #FFD700;
+    color: #5A3D08;
+    border: 2px solid #FFB800;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.action-buttons button:not(:disabled):hover {
+    background-color: #FFC107;
+    transform: scale(1.05);
+}
+
+
+#hit-button:disabled {
+    background-color: #FFD700;
+    opacity: 0.5;
+}
+
+#restart-button {
+    width: 45px;
+    height: 45px;
+    background-color: #FFB800;
+    border: 2px solid #e0a103;
+    display: flex;
+    align-items: center;
+}
+
+#restart-button:hover {
+    background-color: #e0a103;
+}
+
+.restart-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.action-buttons button:disabled {
+    background-color: #E0C27C;
+    border-color: #C4A76D;
+    color: #8B6F36;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+    opacity: 0.5;
+}
+
+.action-buttons button:disabled img {
+    opacity: 0.7;
+}
+
+
+#hit-button {
+    position: relative;
+}
+
+#edit-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    transition: transform 0.2s;
+}
+
+#edit-button:hover .edit-icon {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.action-buttons .target-icon {
+    position: absolute;
+    transform: translate(-30%, 0);
+    width: 100px;
+    height: 100px;
+    filter: invert(18%) sepia(85%) saturate(3934%) hue-rotate(5deg) brightness(96%) contrast(110%);
+    pointer-events: none;
+}

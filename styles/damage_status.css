@@ -1,0 +1,46 @@
+.damage-status {
+    background-color: #FFD700;
+    border: 2px solid #FFB800;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.damage-status h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5A3D08;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#log {
+    font-size: 16px;
+    color: #5A3D08;
+    background-color: #FFF8DC;
+    padding: 10px;
+    border-radius: 8px;
+    height: 300px;
+    overflow-y: auto;
+    border: 2px solid #FFB800;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#log p {
+    margin: 0;
+    padding: 5px 0;
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
